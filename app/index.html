@@ -8,7 +8,20 @@
         <title>Getting Started</title>
     </head>
     <body>
-        <plat-viewport></plat-viewport>
-        <script type="text/javascript" src="dist/app.js"></script>
+        <plat-drawer class="drawer" plat-options="{ position: 'right' }">
+            <plat-link plat-options="{ view: '', isUrl: true }" class="drawer-item">
+                <img class="drawer-icon" src="./images/house.png" />
+                <span>Home</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/login', isUrl: true }" class="drawer-item">
+                <img class="drawer-icon" src="./images/logout.png" />
+                <span>Log Out</span>
+            </plat-link>
+        </plat-drawer>
+        <div class="app">
+            <navbar></navbar>
+            <plat-viewport></plat-viewport>
+        </div>
+<script type="text/javascript" src="dist/app.js"></script>
     </body>
 </html>
